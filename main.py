@@ -26,8 +26,14 @@ class StickyNoteApp(ctk.CTk):
         self.configure(fg_color="#2b2b2b")
         
         try:
-            img = tk.PhotoImage(file="icon.png")
-            self.tk.call('wm', 'iconphoto', self._w, img)
+            import sys
+            if getattr(sys, 'frozen', False):
+                icon_path = os.path.join(sys._MEIPASS, 'icon.png')
+            else:
+                icon_path = "icon.png"
+            if os.path.exists(icon_path):
+                img = tk.PhotoImage(file=icon_path)
+                self.tk.call('wm', 'iconphoto', self._w, img)
         except Exception as e:
             print(f"Icon error: {e}")
 
