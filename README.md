@@ -4,6 +4,16 @@ A modern, feature-rich sticky note application built with Python and CustomTkint
 
 ---
 
+## Download (For Non-Coders)
+
+**No coding required!** Just download and run:
+
+1. Go to: https://github.com/Alool266/FluentNote/releases/tag/v1.0.0
+2. Download **FluentNote.exe** (under "Assets")
+3. Double-click to run - no installation needed!
+
+---
+
 ## Quick Start
 
 ```bash
